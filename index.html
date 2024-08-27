@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logobook.webp">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-navbar">
+        <div class="top-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="other-links">
+            <button id="btn-login" onclick="window.location.href='login.html'">Login</button>
+            <button id="btn-signup" onclick="window.location.href='signup.html'">Sign Up</button>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-shopping-cart"></i>
+        </div>
+    </div>
+
+    <div class="home-section">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <!-- Navbar Brand (Bookies) -->
+                <a class="navbar-brand bookie-heading" href="#" style="color: white; font-weight: bold;">
+                    <img src="./images/trans.png" alt="library logo" width="50"> 
+                    Bookies
+                </a>
+        
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="best.html">Best Seller</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Fiction</a></li>
+                                <li><a class="dropdown-item" href="#">Non-Fiction</a></li>
+                                <li><a class="dropdown-item" href="#">Young Adult</a></li>
+                                <li><a class="dropdown-item" href="#">Children's Book</a></li>
+                                <li><a class="dropdown-item" href="#">Science</a></li>
+                                <li><a class="dropdown-item" href="#">Romance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/caro3.avif" class="d-block w-100" alt="Carousel Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/caro2.jpg" class="d-block w-100" alt="Carousel Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/caro1.webp" class="d-block w-100" alt="Carousel Image 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+
+       <!-- Home Content -->
+<section class="home">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Content -->
+            <div class="col-md-6">
+                <div class="content">
+                    <h3>Welcome to Lorem Bookies<br><span>Up to 50% Off</span></h3>
+                    <p>Discover your next great read at Bookies Library—where every book finds its reader.</p>
+                    <button id="shopnow" data-bs-toggle="modal" data-bs-target="#shopNowModal">Shop Now</button>
+                </div>
+            </div>
+            <!-- Images -->
+            <div class="col-md-6">
+                <div class="d-flex">
+                    <img src="./images/open-book-in-hardcover-on-a-white-background.webp" alt="Book Image" class="img-fluid me-2">
+                    <!-- <img src="./images/mocking.webp" alt="Another Image" class="img-fluid"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+ <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+         <!-- Carousel Item 1 -->
+         <div class="carousel-item active">
+             <div class="container">
+                 <div class="row">
+                     <!-- Book 1 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./New folder/img1.webp" class="card-img-top" alt="To Kill a Mockingbird">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">Set in the racially charged American South, this novel follows Scout Finch, a young girl whose father, Atticus Finch, is a lawyer defending a black man accused of raping a white woman. The story deals with themes of racial injustice and moral growth.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page1.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Book 2 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./images/novel2.webp" class="card-img-top" alt="1984">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">This dystopian novel explores a totalitarian regime led by Big Brother. It follows Winston Smith as he navigates a society under constant surveillance, where independent thought is persecuted and truth is manipulated.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page2.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Book 3 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./images/novel3.webp" class="card-img-top" alt="Pride and Prejudice">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">This classic novel follows Elizabeth Bennet as she navigates issues of class, marriage, and morality in early 19th-century England. It highlights the social intricacies and the impact of personal misunderstandings on relationships.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page3.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Book 4 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./New folder/img2.webp" class="card-img-top" alt="The Great Gatsby">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">Set in the Roaring Twenties, this novel tells the story of Jay Gatsby and his pursuit of wealth and romance. It critiques the American Dream and explores themes of decadence and social change.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page4.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- Carousel Item 2 -->
+         <div class="carousel-item">
+             <div class="container">
+                 <div class="row">
+                     <!-- Book 5 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./New folder/img3.webp" class="card-img-top" alt="Moby-Dick">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">This epic novel chronicles the voyage of the Pequod, captained by the obsessive Ahab, who is on a quest for revenge against the white whale, Moby Dick. It delves into themes of obsession, fate, and the natural world.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page5.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Book 6 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./New folder/img4.webp" class="card-img-top" alt="One Hundred Years of Solitude">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">This landmark work of magical realism chronicles the Buendía family over several generations in the fictional town of Macondo. It combines reality with fantastical elements to explore themes of solitude and history.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page6.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Book 7 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./New folder/img5.webp" class="card-img-top" alt="The Catcher in the Rye">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">The novel follows Holden Caulfield, a disenchanted teenager who has been expelled from prep school and wanders New York City. It captures his angst and search for authenticity in a world he finds phony.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page7.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Book 8 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./New folder/img12.webp" class="card-img-top" alt="Jane Eyre">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">This novel tells the story of Jane Eyre, an orphaned girl who becomes a governess and falls in love with her employer, Mr. Rochester. It addresses themes of class, sexuality, religion, and feminism.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page8.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- Carousel Item 3 -->
+         <div class="carousel-item">
+             <div class="container">
+                 <div class="row">
+                     <!-- Book 9 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./New folder/img7.webp" class="card-img-top" alt="Wuthering Heights">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">This Gothic novel explores the intense and tumultuous relationship between Heathcliff and Catherine Earnshaw on the Yorkshire moors. It delves into themes of passion, revenge, and the supernatural.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page9.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Book 10 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./New folder/img8.webp" class="card-img-top" alt="Brave New World">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">In a dystopian future where society is engineered for stability and happiness through genetic manipulation and psychological conditioning, this novel explores the consequences of a world devoid of individuality and true emotion.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page10.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Book 11 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./New folder/img9.webp" class="card-img-top" alt="The Hobbit">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">A prelude to the Lord of the Rings series, this fantasy novel follows Bilbo Baggins, a hobbit who joins a quest to reclaim a stolen treasure from the dragon Smaug. It’s a tale of adventure, bravery, and personal growth.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page11.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Book 12 -->
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                         <div class="card">
+                             <img src="./New folder/img11.webp" class="card-img-top" alt="The Lord of the Rings">
+                             <div class="card-body text-center">
+                                 <div class="price-overlay">
+                                     <p><strong>&#8377;200.3 <strike>&#8377;100.9</strike></strong></p>
+                                 </div>
+                                 <p class="card-text">This epic fantasy trilogy chronicles the journey of Frodo Baggins and his companions to destroy the One Ring and defeat the Dark Lord Sauron. It explores themes of friendship, heroism, and the struggle between good and evil.</p>
+                                 <button class="btn btn-primary" onclick="window.location.href='page12.html'">Order Now</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- Carousel controls -->
+     <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+     </button>
+ </div>
+ 
+ 
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9g80KHTDFAE8zzpPejFf5dglG5Oe1MikI1O5tN6hJ9aB56dJefT" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+    <footer class="sticky-footer">
+        <div class="container">
+            <p>&copy; 2024 Bookies. All Rights Reserved.</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
